@@ -7,6 +7,8 @@ class data_generator:
     def __init__(self, n=100):
         self.n = 100
         self.df = pd.DataFrame()
+        self.zips = self.zip_sample()
+        self.dates = self.timestamp_sample()
 
     def get_sample(self):
         df = self.df
@@ -29,7 +31,7 @@ class data_generator:
         if not n:
             n = self.n
 
-        days_offset = np.floor(np.random.normal(0, 10, n)**2 + 1)
+        days_offset = np.floor(np.sqrt(np.random.normal(0, 20, n)**2))
 
         return pd.Series(days_offset)
 
@@ -44,7 +46,6 @@ class data_generator:
         if not n:
             n = self.n
 
-        x = np.random.normal(50, 50, n)**2
-        x = np.sqrt(x)
+        y = np.random.randint(10, 900, n)
 
-        return pd.Series(np.floor(x))
+        return pd.Series(np.floor(y))
