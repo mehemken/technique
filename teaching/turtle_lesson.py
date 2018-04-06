@@ -45,7 +45,7 @@ def square2():
 
 def shape(x):
     sides = 360/x
-    height = math.log(sides) * 3
+    height = math.log(sides) * 10
     for i in range(x):
         wario.forward(height)
         wario.left(sides)
