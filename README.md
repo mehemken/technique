@@ -1,5 +1,7 @@
 # Technique
 
-This is a repo where I keep notes on all things Python/Data Science/ML.
+This is a summary of all my data sciency stuff back in the day before I went pro. I didn't go pro with data science as it turns out, I went into cloud computing and DevOps/SRE type stuff. These days (circa 2022) I'm more of a Kubernetes expert and I do a lot of kuberntetes stuff.
 
-## [Table of Contents](https://nbviewer.jupyter.org/github/mehemken/technique/blob/master/table_of_contents.ipynb)
+[Rendered Notebooks on NBViewer][rendered]
+
+[rendered]: http://bit.ly/2juJSag "rendered"
